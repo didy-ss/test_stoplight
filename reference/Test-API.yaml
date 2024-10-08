@@ -79,6 +79,14 @@ paths:
                   description: 'If a new email is given, the user''s email verified property will be set to false.'
                 dateOfBirth:
                   type: string
+                country:
+                  type: string
+                  x-stoplight:
+                    id: 3z7pntpt3lb3b
+                city:
+                  type: string
+                  x-stoplight:
+                    id: 6lhvjcoqd4m8g
             examples:
               Update First Name:
                 value:
