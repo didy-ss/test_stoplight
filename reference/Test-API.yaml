@@ -135,12 +135,17 @@ paths:
                   type: string
                   x-stoplight:
                     id: 0eo1w7nimxbhq
+                city:
+                  type: string
+                  x-stoplight:
+                    id: vj3utc9kw2y20
               required:
                 - firstName
                 - lastName
                 - email
                 - dateOfBirth
                 - country
+                - city
             examples:
               Create User Bob Fellow:
                 value:
@@ -162,6 +167,7 @@ components:
           email: alice.smith@gmail.com
           dateOfBirth: '1997-10-31'
           country: Japan
+          city: Osaka
           emailVerified: true
           signUpDate: '2019-08-24'
       properties:
@@ -183,6 +189,10 @@ components:
           type: string
           x-stoplight:
             id: uryqudn9v59xg
+        city:
+          type: string
+          x-stoplight:
+            id: kjrj0a5vpo4kh
         emailVerified:
           type: boolean
           description: Set to true if the user's email has been verified.
@@ -196,4 +206,5 @@ components:
         - lastName
         - email
         - country
+        - city
         - emailVerified
