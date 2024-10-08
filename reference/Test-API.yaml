@@ -161,6 +161,7 @@ components:
           lastName: Smith
           email: alice.smith@gmail.com
           dateOfBirth: '1997-10-31'
+          country: Japan
           emailVerified: true
           signUpDate: '2019-08-24'
       properties:
