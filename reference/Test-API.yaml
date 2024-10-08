@@ -131,11 +131,16 @@ paths:
                 dateOfBirth:
                   type: string
                   format: date
+                country:
+                  type: string
+                  x-stoplight:
+                    id: 0eo1w7nimxbhq
               required:
                 - firstName
                 - lastName
                 - email
                 - dateOfBirth
+                - country
             examples:
               Create User Bob Fellow:
                 value:
@@ -150,13 +155,13 @@ components:
     User:
       title: User
       type: object
-      description: ''
       examples:
         - id: 142
           firstName: Alice
           lastName: Smith
           email: alice.smith@gmail.com
           dateOfBirth: '1997-10-31'
+          country: Japan
           emailVerified: true
           signUpDate: '2019-08-24'
       properties:
@@ -174,6 +179,10 @@ components:
           type: string
           format: date
           example: '1997-10-31'
+        country:
+          type: string
+          x-stoplight:
+            id: uryqudn9v59xg
         emailVerified:
           type: boolean
           description: Set to true if the user's email has been verified.
@@ -186,4 +195,5 @@ components:
         - firstName
         - lastName
         - email
+        - country
         - emailVerified
